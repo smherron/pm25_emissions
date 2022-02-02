@@ -1,7 +1,7 @@
 ## EMISSIONS
 
-## Across the US, how have emissions from coal combustion-related sources 
-## changed from 1999 to 2008?
+## How have emissions from motor vehicle sources changed from 1999-2008
+## in Baltimore City?
 
 ## fips: 5 digit number indicating county
 ## SCC: name of source as indicated by digit string in source code class table
