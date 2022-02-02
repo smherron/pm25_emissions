@@ -32,9 +32,6 @@ SCC <- readRDS("Source_Classification_Code.rds")
 
 
 
-# by_year <- tapply(NEI$Emissions, NEI$year, FUN = sum)
-# plot(by_year)
-
 by_year <- aggregate(Emissions ~ year, NEI, sum)
 
 
