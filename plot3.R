@@ -39,13 +39,13 @@ by_type <- aggregate(Emissions ~ year + type, baltimore, sum)
 
 ## Create a Scatterplot to see the change in distribution over the years
 png("plot3.png", width = 480, height = 480, bg = NA)
-ggplot(data = baltimore, aes(x = year, y = Emissions, color = factor(type))) +
-    geom_point(alpha = 1/3) +
+ggplot(data = baltimore, aes(x = year, y = Emissions, fill = type)) +
+    geom_bar(stat = "identity") +
     facet_wrap(~type) +
     labs(title = "Emissions in Baltimore City Per Year",
          subtitle = "By Type",
          x = "Year",
-         y = "Total Emissions") +
+         y = "Total PM2.5 Emissions") +
     scale_color_discrete("Type")
 
 
